@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href = "../static/css/all.css">
+    <title>Operator & Operands count</title>
+</head>
+<body>
+    <br>
+    <marquee class="message">Make sure to leave space between each operand and operator for accurate results.</marquee>
+    <br>
+    <br>
+    <form method="POST" class="code_form" >
+        <textarea class="code-input" name = "code_input" placeholder="Enter code here..." rows="25" cols="70">{{original_code}}</textarea>
+        <br>
+        <br>
+        <input class = "calculate-button" type="submit" value="Calculate">
+    </form>
+    <br>
+    <br>
+    <h2>Number of operands and operators</h2>
+    <p>Operators: {{num_operators}}</p>
+    <p>Operands: {{num_operands}} </p>
+</body>
+</html>

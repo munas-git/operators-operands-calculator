@@ -1,0 +1,43 @@
+body{
+    text-align: center;
+    /* background-color: white; */
+    background-image: url('/static/img/gray.png');
+}
+.message{
+    font-family: Courier;
+    font-size: large;
+    color: gray;
+}
+.code-input{
+    border-radius: 10px;
+    width: 500px;
+    height: 300px;
+    opacity: 0.6;
+}
+.code-input:focus{
+    background-color: rgb(247, 244, 244);
+}
+.calculate-button{
+    background-color: rgba(148, 148, 148, 0.933);
+    border: 2px solid ;
+    padding: 15px 30px;
+    border-radius: 10px;
+    color:white;
+}
+.calculate-button:hover{
+    background-color: white;
+    color:rgba(148, 148, 148, 0.933);
+}
+.calculate-button:active{
+    background-color: rgba(122, 120, 120, 0.933);
+    color:white;
+}
+h2{
+    color:white;
+}
+p{
+    color: snow;
+}
+.message{
+    color: snow;
+}
