@@ -69,11 +69,11 @@ def code_length_column(unique_operators_amount, unique_operands_amount):
      code: code string
 
     return:
-     (length, volumn) float values of code estimated length and volumn
+     (length, volume) float values of code estimated length and volumn
     """
 
     n1, n2 = unique_operators_amount, unique_operands_amount
     n = n1 + n2
     length = (n1 * log2(n1) + n2 * log2(n2))
-    volumn = length * log2(n)
-    return(length, volumn)
+    volume = length * log2(n)
+    return(length, volume)

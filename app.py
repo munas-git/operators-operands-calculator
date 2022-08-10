@@ -18,9 +18,9 @@ def home():
         operands = operands_count(clean_code)
         unique_operands_amount = operands[1]
         unique_operators_amount = operators[3]
-        length_volumn = code_length_column(unique_operators_amount, unique_operands_amount) 
+        length_volume = code_length_column(unique_operators_amount, unique_operands_amount) 
 
-        return render_template('result.html', num_operators = operators[2], num_operands = operands[0], original_code = original_code, clean_code = clean_code, length = length_volumn[0], volumn = length_volumn[1])
+        return render_template('result.html', num_operators = operators[2], num_operands = operands[0], original_code = original_code, clean_code = clean_code, length = length_volume[0], volumn = length_volume[1])
 
 
 
