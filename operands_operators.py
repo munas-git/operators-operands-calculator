@@ -5,7 +5,7 @@ operators = [
         '>>=', '<<=','==', '!=','>', '<', '>=', '<=', 'and', 'or', 'not', 'is', 'is not', 'in', 'not in', '&',
         '|', '^', '~', '<<', '>>', 'return', 'def']
 non_operators = [
-    ':', ';', '.', "'", '"', '(', ')', '[', ']', '{', '}', 
+    ':', ';', '.', "'", '"', '(', ')', '[', ']', '{', '}', '_', 
 ]
 
 
@@ -61,7 +61,7 @@ def operands_count(code):
     return (operands_amount, unique_operands_amount)
 
 
-def code_length_column(unique_operators_amount, unique_operands_amount):
+def code_length_volume(unique_operators_amount, unique_operands_amount):
     """
     This function takes number of unique operators, number of unique operands and returns the codes estimate length and volumn.
 
