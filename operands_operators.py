@@ -9,9 +9,9 @@ non_operators = [
 ]
 
 
-def operators_count(code):
+def operators_count(code:str) -> tuple:
     """
-    This function calculates the number of operators and operands in a string of code (python)
+    This function calculates the number of operators in a string of code (python)
 
     Parameter:
      code: code string
@@ -35,9 +35,9 @@ def operators_count(code):
     return(operators_dict, operators_list, operators_amount, unique_operators_amount)
 
 
-def operands_count(code):
+def operands_count(code:str) -> tuple:
     """
-    This function extracts the operands in a code and puts them in a code by isolating the operators and returning returnig what is left
+    This function calculates the number of operands in a string of code (python)
 
     paratemer:
      code: code string
@@ -61,7 +61,7 @@ def operands_count(code):
     return (operands_amount, unique_operands_amount)
 
 
-def code_length_volume(unique_operators_amount, unique_operands_amount):
+def code_length_volume(unique_operators_amount:int, unique_operands_amount:int) -> tuple:
     """
     This function takes number of unique operators, number of unique operands and returns the codes estimate length and volumn.
 
